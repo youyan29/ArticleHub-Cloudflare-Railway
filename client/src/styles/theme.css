@@ -1,0 +1,46 @@
+/* ======================
+   HOME THEME（全局）
+====================== */
+
+body.light {
+  background: #ffffff;
+  color: #000;
+  --card: #f9f9f9;
+  --input-bg: #f7f7f7;
+  --input-text: #222;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #fff;
+  --card: #2a2a2a;
+  --input-bg: #333333;
+  --input-text: #eeeeee;
+}
+
+body.eye {
+  background: #e8f5e9;
+  color: #000;
+  --card: #edf4e4;
+  --input-bg: #f6fbf2;
+  --input-text: #2f3a2f;
+}
+
+/* ======================
+   EDITOR THEME（继承 Home）
+====================== */
+
+[data-editor-theme="light"] {
+  --editor-bg: #ffffff;
+  --editor-text: #000;
+}
+
+[data-editor-theme="dark"] {
+  --editor-bg: #1e1e1e;
+  --editor-text: #fff;
+}
+
+[data-editor-theme="eye"] {
+  --editor-bg: #e8f5e9;
+  --editor-text: #000;
+}

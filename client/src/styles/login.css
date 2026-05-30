@@ -1,0 +1,140 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-card h1 {
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+
+.sub {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.login-card input {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--input-bg);
+  color: var(--text-color);
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  color-scheme: light dark;
+}
+
+.login-card input:focus {
+  border-color: #4f8cff;
+}
+
+.password-input::-ms-reveal {
+  display: none;
+}
+
+.password-input::-ms-clear {
+  display: none;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+  height: 25px;
+  padding: 12px 40px 12px 12px;
+  border-radius: 12px;
+  border: none;
+  background: var(--input-bg);
+  color: var(--input-text);
+}
+
+.password-wrapper .toggle-eye {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--input-text);
+  display: flex;
+  align-items: center;
+}
+
+.remember-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: -4px;
+  margin-bottom: 4px;
+
+  font-size: 14px;
+}
+
+.remember-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+
+  cursor: pointer;
+}
+
+.remember-row label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.login-btn,
+.register-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.login-btn {
+  background: var(--input-bg);
+  color: var(--input-text);
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+}
+
+.register-btn {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.96);
+}

@@ -1,0 +1,22 @@
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.chapter-main {
+  flex: 1;
+}
+
+.chapter-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.chapter-item:hover {
+  background: #f5f5f5;
+}

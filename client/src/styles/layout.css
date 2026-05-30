@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  padding: 0 20px 10px 20px;
+  overflow: auto;
+}
+
+.chapter-create {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.chapter-create input {
+  width: 80%;
+}
+
+.chapter-create button {
+  width: 20%;
+}
+
+.history {
+  width: 15%;
+  border-left: 1px solid #ddd;
+  padding: 0 15px;
+  overflow: auto;
+}
+
+.editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topbar select {
+  margin-left: auto;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.chapter-item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.chapter-item:hover {
+  background: #f2f2f2;
+}
+
+.title-input {
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.history-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+.chapter-card {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chapter-card:hover {
+  background: #f5f5f5;
+}
+
+.chapter-title {
+  font-weight: 600;
+}
+
+.chapter-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.layout.light {
+  background: #ffffff;
+  color: #222;
+}
+
+.layout.light .chapter-card {
+  background: #f9f9f9;
+  color: #222;
+}
+
+.layout.light .editor-body textarea {
+  background: #f9f9f9;
+  color: #222;
+}
+
+.layout.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.layout.dark .chapter-card {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+.layout.dark .editor-body textarea {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+.layout.eye {
+  background: #e8f5e9;
+  color: #2f3a2f;
+}
+
+.layout.eye .chapter-card {
+  background: #edf4e4;
+  color: #2f3a2f;
+}
+
+.layout.eye .editor-body textarea {
+  background: #edf4e4;
+  color: #2f3a2f;
+}
