@@ -36,8 +36,9 @@ export default function Login() {
       api.defaults.headers.common["Authorization"] = `Bearer ${res.data.token}`;
 
       alert("注册成功");
+      window.location.href = "/";
 
-      nav("/");
+      //nav("/");
     } catch (err) {
       alert(err.response?.data?.message || "注册失败");
     }
